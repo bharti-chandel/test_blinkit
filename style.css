@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo .yellow {
+    color: #f8cb46;
+}
+
+.logo .green {
+    color: #0c831f;
+}
+
+.location-box h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.location-box p {
+    font-size: 12px;
+    color: #777777;
+}
+
+.search-box {
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    background-color: #ffffff;
+    border-color: #0c831f;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-btn {
+    background-color: #0c831f;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner {
+    background: #1c7430;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    max-width: 500px;
+}
+
+.banner-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.shop-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1c7430;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 20px;
+}
+
+.banner-img img {
+    width: 260px;
+    height: 180px;
+}
+
+.promo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.promo-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-teal {
+    background: #0ea5e9;
+    color: #ffffff;
+}
+
+.card-yellow {
+    background: #f59e0b;
+    color: #ffffff;
+}
+
+.card-blue {
+    background: #cbd5e1;
+    color: #1e293b;
+}
+
+.promo-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.promo-card p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.order-btn {
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 14px;
+}
+
+.promo-card img {
+    width: 65px;
+    height: 65px;
+}
+
+.categories h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.category-item {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.category-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.category-item span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        order: 3;
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .banner-img img {
+        width: 180px;
+        height: 120px;
+    }
+
+    .promo-section {
+        flex-direction: column;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
